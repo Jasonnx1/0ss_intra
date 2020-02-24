@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "Gestionnaire_Clients/1.0.0": {
+        "dependencies": {
+          "intra_model": "1.0.0"
+        },
+        "runtime": {
+          "Gestionnaire_Clients.dll": {}
+        }
+      },
+      "intra_model/1.0.0": {
+        "runtime": {
+          "intra_model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Gestionnaire_Clients/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "intra_model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

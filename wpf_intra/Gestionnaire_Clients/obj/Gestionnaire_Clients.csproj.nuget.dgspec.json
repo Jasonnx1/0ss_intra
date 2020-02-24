@@ -1,0 +1,119 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\0ss_intra\\gelinas\\wpf_intra\\Gestionnaire_Clients\\Gestionnaire_Clients.csproj": {}
+  },
+  "projects": {
+    "D:\\0ss_intra\\gelinas\\wpf_intra\\Gestionnaire_Clients\\Gestionnaire_Clients.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\0ss_intra\\gelinas\\wpf_intra\\Gestionnaire_Clients\\Gestionnaire_Clients.csproj",
+        "projectName": "Gestionnaire_Clients",
+        "projectPath": "D:\\0ss_intra\\gelinas\\wpf_intra\\Gestionnaire_Clients\\Gestionnaire_Clients.csproj",
+        "packagesPath": "C:\\Users\\1742395\\.nuget\\packages\\",
+        "outputPath": "D:\\0ss_intra\\gelinas\\wpf_intra\\Gestionnaire_Clients\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\1742395\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "D:\\0ss_intra\\gelinas\\wpf_intra\\intra_model\\intra_model.csproj": {
+                "projectPath": "D:\\0ss_intra\\gelinas\\wpf_intra\\intra_model\\intra_model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\0ss_intra\\gelinas\\wpf_intra\\intra_model\\intra_model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\0ss_intra\\gelinas\\wpf_intra\\intra_model\\intra_model.csproj",
+        "projectName": "intra_model",
+        "projectPath": "D:\\0ss_intra\\gelinas\\wpf_intra\\intra_model\\intra_model.csproj",
+        "packagesPath": "C:\\Users\\1742395\\.nuget\\packages\\",
+        "outputPath": "D:\\0ss_intra\\gelinas\\wpf_intra\\intra_model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\1742395\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

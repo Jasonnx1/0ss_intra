@@ -1,0 +1,8 @@
+D:\0ss_intra\gelinas\wpf_intra\intra_model\bin\Debug\netcoreapp3.0\intra_model.deps.json
+D:\0ss_intra\gelinas\wpf_intra\intra_model\bin\Debug\netcoreapp3.0\intra_model.dll
+D:\0ss_intra\gelinas\wpf_intra\intra_model\bin\Debug\netcoreapp3.0\intra_model.pdb
+D:\0ss_intra\gelinas\wpf_intra\intra_model\obj\Debug\netcoreapp3.0\intra_model.csprojAssemblyReference.cache
+D:\0ss_intra\gelinas\wpf_intra\intra_model\obj\Debug\netcoreapp3.0\intra_model.AssemblyInfoInputs.cache
+D:\0ss_intra\gelinas\wpf_intra\intra_model\obj\Debug\netcoreapp3.0\intra_model.AssemblyInfo.cs
+D:\0ss_intra\gelinas\wpf_intra\intra_model\obj\Debug\netcoreapp3.0\intra_model.dll
+D:\0ss_intra\gelinas\wpf_intra\intra_model\obj\Debug\netcoreapp3.0\intra_model.pdb
