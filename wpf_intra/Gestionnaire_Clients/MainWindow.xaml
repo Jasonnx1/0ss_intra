@@ -5,8 +5,80 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gestionnaire_Clients"
         mc:Ignorable="d"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
         Title="Gestion de clients" Height="450" Width="800">
     <Grid>
+
+
+        <Grid Width="200" Height="390" VerticalAlignment="Center" Margin="5,0,595,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="15*"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Content="Liste des clients"/>
+
+            <ListView Grid.Row="1" ItemsSource="{Binding customers}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Info}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        </Grid>
+
+
+
+        <Grid Margin="210,22,10,217">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Label Content="Name: " Grid.Row="0"/>
+            <Label Content="LastName: " Grid.Row="1"/>
+            <Label Content="Address: " Grid.Row="2"/>
+            <Label Content="Zip Code: " Grid.Row="3"/>
+            <Label Content="Province: " Grid.Row="4"/>
+            <Label Content="City: " Grid.Row="5"/>
+            <Label Content="Contact: " Grid.Row="6"/>
+
+            <TextBox Text="{Binding Current_customer.Name}" Grid.Row="0" Grid.Column="1"/>
+            <TextBox Text="{Binding Current_customer.LastName}" Grid.Row="1" Grid.Column="1"/>
+            <TextBox Text="{Binding Current_customer.Address}" Grid.Row="2" Grid.Column="1"/>
+            <TextBox Text="{Binding Current_customer.PostalCode}" Grid.Row="3" Grid.Column="1"/>
+            <TextBox Text="{Binding Current_customer.Province}" Grid.Row="4" Grid.Column="1"/>
+            <TextBox Text="{Binding Current_customer.City}" Grid.Row="5" Grid.Column="1"/>
+            <TextBox Text="{Binding Current_customer.ContactInfo}" Grid.Row="6" Grid.Column="1"/>
+
+        </Grid>
+
+        <Grid Margin="210,222,10,22">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+                <Image Source="{Binding Current_customer.PicturePath}"/>
+            <Button Grid.Column="1" Content="Delete" Height="20" VerticalAlignment="Top" />
+        </Grid>
+
 
         <DockPanel>
 
@@ -43,8 +115,7 @@
                 </MenuItem>
             </Menu>
 
-
-            <StatusBar DockPanel.Dock="Bottom" Height="19" VerticalAlignment="Bottom">
+            <StatusBar DockPanel.Dock="Bottom" Height="19" Width="auto" VerticalAlignment="Bottom">
                 <TextBlock Text="Customer:" VerticalAlignment="Top"/>
             </StatusBar>
 

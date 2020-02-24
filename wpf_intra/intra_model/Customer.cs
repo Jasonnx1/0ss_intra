@@ -20,7 +20,7 @@ namespace intra_model
         private string name;
         public string Name
         {
-            get => Name;
+            get => name;
             set
             {
                 name = value;
