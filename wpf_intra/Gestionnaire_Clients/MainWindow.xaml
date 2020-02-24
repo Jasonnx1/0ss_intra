@@ -76,7 +76,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-                <Image Source="{Binding Current_customer.PicturePath}"/>
+                <Image Source="{Binding Current_customer.PicturePath}"/>  
             <Button Grid.Column="1" Content="Delete" Height="20" VerticalAlignment="Top" Click="Button_Delete" />
         </Grid>
 
