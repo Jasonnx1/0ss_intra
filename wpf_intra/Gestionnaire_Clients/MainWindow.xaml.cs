@@ -29,6 +29,9 @@ namespace Gestionnaire_Clients
 
         Customer current_customer;
 
+        int MaxIndex;
+
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         public Customer Current_customer {
@@ -57,7 +60,10 @@ namespace Gestionnaire_Clients
             customers.Add(new Customer() { Name = "Clinton", LastName = "Gallagher", Address = "Ap #150-7450 Sapien Rd.", City = "Scarborough", Province = "ON", PostalCode = "M5V 7N1", PicturePath = "images/user.png", ContactInfo = "Home : 328-524-0475" });
             customers.Add(new Customer() { Name = "Amal", LastName = "Cross", Address = "P.O. Box 738, 9025 Sed Street", City = "Parkland County", Province = "AB", PostalCode = "T6S 6A4", PicturePath = "images/user.png", ContactInfo = "Cell : 250-555-4617" });
             customers.Add(new Customer() { Name = "Vanna", LastName = "Hyde", Address = "5671 Eros Rd.", City = "Daly", Province = "MB", PostalCode = "R0E 5T0", PicturePath = "images/user.png", ContactInfo = "Email : Quisque@neque.net" });
+            MaxIndex = customers.Count();
             Current_customer = customers[0];
+            lv_customers.SelectedIndex = 0;
+
 
 
 
@@ -68,6 +74,50 @@ namespace Gestionnaire_Clients
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        private void Button_Add(object sender, RoutedEventArgs e)
+        {
+            customers.Add(new Customer() { Name = "Default" });
+            Current_customer = customers[MaxIndex];
+            lv_customers.SelectedIndex = MaxIndex;
+            MaxIndex++;
 
+        }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {           
+            if(customers.Count() > 0)
+            {
+                Current_customer = customers[lv_customers.SelectedIndex];
+            }
+                
+        }
+
+        private void Button_Delete(object sender, RoutedEventArgs e)
+        {
+
+            if(lv_customers.SelectedIndex > 0)
+            {
+                lv_customers.SelectedIndex -= 1;
+                customers.RemoveAt(lv_customers.SelectedIndex + 1);
+
+            }
+            else if(customers.Count() > 1)
+            {
+                lv_customers.SelectedIndex += 1;
+                customers.RemoveAt(lv_customers.SelectedIndex - 1);
+            }
+            else
+            {
+
+                lv_customers.SelectedIndex = 0;
+                Current_customer = null;
+                customers.RemoveAt(0);
+
+            }
+
+            MaxIndex--;
+
+            
+        }
     }
 }
